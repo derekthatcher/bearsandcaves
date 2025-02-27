@@ -21,7 +21,12 @@ body {
 
 header{
     text-align: center;
-    color:#c7a402;}
+    color:#c7a402;
+    position: absolute;
+    text-align: right;
+    width: 50%;
+    margin-left: 50%;
+  }
 
 #tools {
   z-index: 999;
@@ -30,6 +35,7 @@ header{
   color: gray;
 }
 #tools button {
+  z-index: 1999;
   padding: 0;
   font-size: 0.8em;
   min-width: 1.4em;
@@ -41,7 +47,7 @@ header{
 #dice-container {
   display: flex;
   flex-flow: column nowrap;
-  height: 80%;
+  height: 100%;
   justify-content: center;
   align-content:center;
 }
@@ -61,7 +67,7 @@ header{
 .die-container .die {
   position: absolute;
   width: 100%;
-  top: 5%;
+  top: 10%;
   left: 10%;
 }
 .die-container .die svg {
